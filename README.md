@@ -1,3 +1,5 @@
+> Note: This is a fork from https://github.com/videlalvaro/php-amqplib with some changes identified by SMARKIO and proposed back as Pull Requests. As soon as those PRs get merged, this package might be abandoned. 
+
 # php-amqplib #
 
 [![Build Status](https://secure.travis-ci.org/videlalvaro/php-amqplib.png)](http://travis-ci.org/videlalvaro/php-amqplib)

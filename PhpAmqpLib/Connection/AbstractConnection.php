@@ -575,11 +575,7 @@ class AbstractConnection extends AbstractChannel
                 if( $_timeout > 0 )
                 {
                     $_timeout -= time() - $now;
-                    if( $_timeout <= 0 )
-                    {
-                        // If timeout has reached, throw the exception without calling wait_frame
-                        throw new AMQPTimeoutException( "Timeout waiting on channel");
-                    }
+                    $_timeout = $_timeout > 0 ? $_timeout : 0;
                 }
                 continue;
 

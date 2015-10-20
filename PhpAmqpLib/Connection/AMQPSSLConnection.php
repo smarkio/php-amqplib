@@ -4,10 +4,10 @@ namespace PhpAmqpLib\Connection;
 class AMQPSSLConnection extends AMQPStreamConnection
 {
     /**
-     * @param AbstractConnection $host
+     * @param string $host
      * @param int $port
      * @param string $user
-     * @param bool $password
+     * @param string $password
      * @param string $vhost
      * @param array $ssl_options
      * @param array $options

@@ -353,6 +353,9 @@ class StreamIO extends AbstractIO
             fclose($this->sock);
         }
         $this->sock = null;
+        // Reset last_read and last_write
+        $this->last_read = null;
+        $this->last_write = null;
     }
 
     /**
